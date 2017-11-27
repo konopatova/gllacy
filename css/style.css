@@ -456,6 +456,12 @@
     padding: 0 2em;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2em;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -512,6 +518,10 @@ h3 {
   line-height: 1.375em; 
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 1.500em; 
+}
 
 .nav {
   margin: 0.5em auto;
@@ -792,4 +802,54 @@ button {
   font-weight: bold;
   color: #fff;
   text-shadow: 0.05em 0.05em 0.05em #585858;
+}kg {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  margin: 0 auto;
+  bottom: 8.2rem;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.05em #585858;
+}
+
+.about {
+  background-color: #f3e8d2;
+  background-image: url(/img/waffle.png);
+  border-radius: 1.2em;
+}
+
+.strength-group {
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+li.strength {
+  color: #000;
+  font-size: 1pt;
+  
+  font-weight: 400;
+}
+
+li.strength:nth-child(1) {
+  list-style-image: url(/img/strength-1.png);
+}
+
+
+li.strength:nth-child(2) {
+   list-style-image: url(/img/strength-2.png);
+}
+
+li.strength:nth-child(3) {
+  list-style-image: url(/img/strength-3.png);
+}
+
+li.strength:nth-child(4) {
+  margin-right: 0;
+  list-style-image: url(/img/strength-4.png);
 }
