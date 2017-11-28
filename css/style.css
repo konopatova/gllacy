@@ -588,7 +588,7 @@ button {
 
 .btn {
   padding: 0.5em; 
-  background-image: url(/img/opacity.png);
+  background-image: url(/gllacy/img/opacity.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -633,16 +633,16 @@ button {
 }
 
 .ice-cream-1 {
-  background-image: url(/img/1.png);
+  background-image: url(/gllacy/img/1.png);
 }
 
 .ice-cream-2 {
-  background-image: url(/img/3.png);
+  background-image: url(/gllacy/img/3.png);
   display: none; 
 }
 
 .ice-cream-3 {
-  background-image: url(/img/3.png);
+  background-image: url(/gllacy/img/3.png);
   display: none;
 }
 
@@ -734,14 +734,14 @@ button {
 
 .banner-1 {
   background-color: #ac1000;
-  background-image: url(/img/banner-1.png);
+  background-image: url(/gllacy/img/banner-1.png);
   background-position: center;
   
 }
 
 .banner-2 {
   background-color: #2b150b;
-  background-image: url(/img/banner-2.png);
+  background-image: url(/gllacy/img/banner-2.png);
   background-position: center;
 }
 
@@ -776,7 +776,7 @@ button {
   width: 4em;
   height: 4em;
   background-color: #fff;
-  background-image: url(/img/hit.png);
+  background-image: url(/gllacy/img/hit.png);
   opacity: 1;
   top: 0;
   left: 0;
@@ -811,7 +811,7 @@ button {
 .features {
   padding: 0;
   background-color: #e1d5bc;
-  background-image: url(/img/waffle.png);
+  background-image: url(/gllacy/img/waffle.png);
   border-radius: 1.2em;
   width: 1136px;
   margin: auto auto 2em;
@@ -867,27 +867,27 @@ ul {
 .feature-1:before {
   top: 0em;
   left: 1em;
-  background-image: url(/img/strength-1.png);
+  background-image: url(/gllacy/img/strength-1.png);
 }
 
 
 .feature-2:before  {
   top: 5em;
   left: 1em;
-  background-image: url(/img/strength-2.png);
+  background-image: url(/gllacy/img/strength-2.png);
 }
 
 .feature-3:before  {
   top: 0em;
   left: 36em;
-  background-image: url(/img/strength-3.png);
+  background-image: url(/gllacy/img/strength-3.png);
 }
 
 .feature-4:before  {
   top: 5em;
   left: 36em;
   margin-right: 0;
-  background-image: url(/img/strength-4.png);
+  background-image: url(/gllacy/img/strength-4.png);
 }
 
 .feedback {
@@ -898,7 +898,7 @@ ul {
 
 .blog {
   background-color: #e9e9e9;
-  background-image: url(/img/blog.png);
+  background-image: url(/gllacy/img/blog.png);
   background-position: center;
 }
 
