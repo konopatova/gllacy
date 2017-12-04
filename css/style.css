@@ -456,7 +456,6 @@
 
 body {
   max-width: 1200px;
-  min-width: 900px;
   height: 100%;
   position: relative;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -557,7 +556,7 @@ h4 {
   margin-right: 0;
 }
 
-.main-menu-left > svg {
+.main-menu-left > img {
   margin: 0 1.5em -2em 0;
 }
 
@@ -582,6 +581,74 @@ button.cart {
   font-weight: bold;
 }
 
+.button {
+  border-radius: 10em;
+  padding: 0.5em; 
+  background-color: rgba(255,255,255, 0.2); 
+  cursor: pointer;
+}
+
+/*
+.button:hover {
+  border-radius: 10em;
+  padding: 0.5em; 
+  background-color: #fff;
+  cursor: pointer;
+} */
+
+.search svg {
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+}
+
+.enter svg,
+.cart svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.search svg:hover,
+.enter svg:hover,
+.cart svg:hover {
+  fill: #000;
+}
+
+.animate-svg {
+  -webkit-animation: animate-svg 0.4s 0s ease-in-out;
+    -moz-animation:  animate-svg 0.4s 0s ease-in-out;
+      -o-animation:  animate-svg 0.4s 0s ease-in-out;
+         animation:  animate-svg 0.4s 0s ease-in-out;
+}
+
+.animate-button-bg {
+       -webkit-animation: animate-button-bg 0.4s  0s ease-in-out;
+         -moz-animation:  animate-button-bg 0.4s  0s ease-in-out;
+           -o-animation:  animate-button-bg 0.4s  0s ease-in-out;
+              animation:  animate-button-bg 0.4s  0s ease-in-out;
+}
+
+@keyframes animate-svg {
+  0%,100% {
+    fill: #fff;
+  } 
+  100% {
+    fill: #000;
+    }
+}
+
+@keyframes animate-button-bg {
+  0%,100% {
+    background-color: rgba(255,255,255, 0.2);
+    color: #fff;
+  } 
+  100% {
+    background-color: #fff;
+    color: #000;
+    }
+}
+
 button {
   background: none;
 }
@@ -594,15 +661,6 @@ button.cart > svg {
 button.enter,
 button.cart {
   width: 8em;  
-}
-
-.button {
-  padding: 0.5em; 
-  background-image: url(/img/opacity.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  cursor: pointer;
 }
 
 .working-hours {
@@ -841,7 +899,8 @@ p.free-order-description {
 .features-block {
   padding: 0;
   background-color: #e1d5bc;
-  background-image: url(/img/waffle.png);
+  background-image: url(/img/pattern-waffle.png);
+  background-repeat: repeat;
   border-radius: 1.2em;
   margin: auto auto 2em;
 }
@@ -934,7 +993,13 @@ p.free-order-description {
 
 .subscribe {
   background-color: #e9e9e9;
-  background-image: url(/img/e-mail.png);
+  background-image: url(/img/pattern-email.png);
+  background-repeat: repeat;
   background-position: center;
-  background-size: cover; 
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
