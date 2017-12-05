@@ -978,7 +978,7 @@ p.free-order-description {
 
 .blog {
   background-color: #e9e9e9;
-  background-image: url(/gllacy/img/blog.png);
+  background-image: url(gllacy/img/blog.png);
   background-position: center;
 }
 
@@ -1071,7 +1071,7 @@ p.free-order-description {
   height: 1.5em;
   top: 0;
   left: -1.5em;
-  background-image: url(/gllacy/img/heart.svg);
+  background-image: url(/img/heart.svg);
   background-repeat: no-repeat;
 }
 
