@@ -564,9 +564,9 @@ h4 {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .main-menu-left .link:active {
@@ -575,9 +575,6 @@ h4 {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
   box-shadow: inset 0px 2px 0px 0px rgb(75, 75, 75);
 }
 
