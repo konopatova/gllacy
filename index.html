@@ -9,6 +9,7 @@
     <title>Gllacy</title>
 </head>
 <body>
+    <div class="page-wrapper">
     <header>
         <nav>
             <div class="main-menu">
@@ -205,8 +206,10 @@
 	       </div>
       </div>
 
+    </div>
+      <div class="map" id="map"></div>
 
-      <div class="map"></div>
+      <div class="page-wrapper">
 
       <footer class="footer">
          <div class="social-group">
@@ -223,8 +226,8 @@
          
          <div class="documents">
              <a class="link" href="#">Для поставщиков</a>
-             <a class="link" href="#">О производстве</a>
              <a class="link" href="#">Наши документы</a>
+             <a class="link" href="#">О производстве</a>
              <a class="link" href="#">Экологические стандарты</a>
              
          </div>
@@ -235,9 +238,13 @@
          </div>
 
       </footer>
-
+ 
     </main>
 
-<script src="/gllacy/js/script.js"></script>
+<script src="/js/script.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhpIHeoDR2WQo3ex7nscLdKu3-JqOY-E&callback=initMap">
+</script>
+</div>
 </body>
 </html>

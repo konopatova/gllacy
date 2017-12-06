@@ -39,18 +39,22 @@ buttonCartBg.onmouseout = function() {
 
 
 
-/*
-buttonSearch.onmouseover = function() {
-    buttonSearch.classList.toggle ('animate-svg')
-};
-*/
+/********************************************/
 
-
-    /* event.preventDefault();
-while (button) {
-var buttonHover = document.querySelector('.search');
-    buttonHover.style.fill='#000000';
-}
-});
-
- */
+function initMap() {
+var adress = {lat: 59.9387942, lng: 30.3208946};
+var pin ='https://biobreak.files.wordpress.com/2013/10/wavy3.jpg'
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: adress 
+        });
+var marker = new google.maps.Marker({
+    position: adress,
+    map: map,
+    icon: pin,
+    draggable:true,
+    animation: google.maps.Animation.DROP,
+    position: {lat: 59.9381, lng: 30.321},
+    title:"Астрологи объявили неделю смешных шуток",
+        });
+      }

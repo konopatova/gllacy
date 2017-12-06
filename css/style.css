@@ -456,15 +456,18 @@
 
 body {
   width: 100%;
-  max-width: 1200px;
-  min-width: 900px;
   height: 100%;
   position: relative;
   font-family: 'Roboto', 'Arial', sans-serif;
   text-decoration: none;
-  margin: 0 auto; 
-  padding: 0 1.688em;
   background-color: #849d8f;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 900px;
+  padding: 0 1.688em;
 }
 
 .background-slider-1 {
@@ -1115,6 +1118,7 @@ a.catalog-item-name > h3 {
 }
 
 .social-group svg {
+  opacity: .6;
   width: 40px;
   height: 40px;
   border: 4px solid  rgba(255,255,255, 0.2);
@@ -1132,7 +1136,7 @@ a.catalog-item-name > h3 {
 
 .footer {
   display: flex;
-  margin-top: 1em;
+  margin: 2em 0;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -1164,7 +1168,7 @@ a.catalog-item-name > h3 {
 .documents .link {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2em 0 0;
+  margin: 0 2em 0.5em 0;
 }
 
 .documents .link:first-child {
@@ -1180,4 +1184,10 @@ a.catalog-item-name > h3 {
   padding: 0;
   margin: 0;
   color: #fff;
+}
+
+#map {
+  margin-top: 2.5em;
+  width: 100%;
+  height: 400px;
 }
