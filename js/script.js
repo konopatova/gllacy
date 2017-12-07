@@ -58,3 +58,6 @@ var marker = new google.maps.Marker({
     title:"Астрологи объявили неделю смешных шуток",
         });
       }
+map.title = 'Астрологи объявили неделю смешных шуток';
+icon.style.borderRadius = '10px';
+icon.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
