@@ -551,19 +551,23 @@ h4 {
 
 .main-menu-left .link {
   font-size: 1em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0 0.5em;
   margin: 4em 0.5em 4em 0;
-  border-bottom: 1px solid rgba(255,255,255,.2);
   text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 .main-menu-left .link:nth-child(2) {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 4em 0.5em 4em 0;
   border-radius: 10em;
   background-color: #d07058;
   text-decoration: none;
 }
 
 .main-menu-left .link:hover {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 4em 0.5em 4em 0;
   border-radius: 10em;
   background-color: #fff;
   color: #000;
@@ -581,6 +585,7 @@ h4 {
   text-decoration: none;
   cursor: pointer;
   box-shadow: inset 0px 2px 0px 0px rgb(75, 75, 75);
+  border-bottom: 1px solid rgb(75, 75, 75);
 }
 
 .main-menu-left .link:last-child {
@@ -804,6 +809,13 @@ input[type=radio] {
 
 a.button-order:hover {
   color: #fff;
+}
+
+.button-order:hover {
+  background-color: #f38267;
+  background-image: none;
+  border-bottom: 2px solid #ac1000;
+  box-shadow: 0 0.125em 0.125em 0 #ac1000;
 } 
 
 .button-order.size-b {
@@ -907,8 +919,13 @@ p.free-order-description {
   align-self: center;
 }
 
-a.catalog-item-name > h3 { 
+.catalog-item a.catalog-item-name { 
+  width: 100%;
+  padding: 0 0;
   margin: 1em 0 0 0;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 .status:before {
