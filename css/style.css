@@ -547,6 +547,7 @@ h4 {
 .main-menu-left {
   flex-basis: 30em;
   flex-grow: 2;
+  position: relative;
 }
 
 .main-menu-left .link {
@@ -1217,6 +1218,40 @@ p.free-order-description {
   width: 100%;
   height: 400px;
 }
+
+.hidden-submenu {
+  width: 144px;
+  height: 172px;
+  position: absolute;
+  top: 43%;
+  left: 18%;
+  color: #000;
+  border-radius: 3%;
+  background-color: #fff;
+  box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.hidden-submenu a {
+  display: block;
+  width: 100%;
+  color: #000;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.hidden-submenu a:first-child {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.submenu-list-link {
+  font-weight: normal;
+}
+
+.submenu-list-link:hover {
+  background-color: #fff;
+}
+
 
 /****************************catalog.html*******************************/
 
