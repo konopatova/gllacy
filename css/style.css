@@ -1220,6 +1220,7 @@ p.free-order-description {
 }
 
 .hidden-submenu {
+  display: none;
   width: 144px;
   height: 172px;
   position: absolute;
@@ -1232,11 +1233,16 @@ p.free-order-description {
   z-index: 5;
 }
 
+.hidden-submenu:hover ~ .open-submenu {
+  display: block;
+}
+
 .hidden-submenu a {
   display: block;
   width: 100%;
   color: #000;
-  padding: 0.5em;
+  font-size: 0.875em;
+  padding: 0.6em 1.5em;
   text-decoration: none;
 }
 
@@ -1249,7 +1255,17 @@ p.free-order-description {
 }
 
 .submenu-list-link:hover {
-  background-color: #fff;
+  background-color: #fbded8;
+  font-weight: normal;
+}
+
+.submenu-list-link:active {
+  background-color: #f6b5a5;
+  color: #fff;
+}
+
+.submenu-list-link:first-child {
+  background-color: #d07058;
 }
 
 
