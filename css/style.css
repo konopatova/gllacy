@@ -1084,7 +1084,7 @@ p.free-order-description {
 }
 
 .catalog-item { 
-  width: 25%; 
+  max-width: 25%; 
   display: inline-block;
   position: relative;
   margin: 0 auto;
@@ -1096,11 +1096,12 @@ p.free-order-description {
 
 .catalog-item a.catalog-item-name { 
   width: 100%;
-  padding: 0 0;
-  margin: 1em 0 0 0;
+  padding: 0 0.5em;
+  margin: 0 0 1.5em 0;
   text-decoration: none;
   text-align: center;
   border-bottom: 1px solid rgba(255,255,255,.2);
+  font-weight: 400;
 }
 
 .status:before {
@@ -1123,11 +1124,11 @@ p.free-order-description {
   vertical-align: top;
   position: relative;
   margin: 0 auto;
-  bottom: 8rem;
+  bottom: 8.5rem;
   font-size: 3em;
   font-weight: normal;
   color: #fff;
-  text-shadow: 0.05em 0.05em 0.04em #585858;
+  text-shadow: 0.04em 0.03em 0 #585858;
 }
 
 .catalog-item-unit {
@@ -1135,7 +1136,7 @@ p.free-order-description {
   vertical-align: bottom;
   position: relative;
   margin: 0 auto;
-  bottom: 8.2rem;
+  bottom: 8.9rem;
   font-size: 2em;
   font-weight: bold;
   color: #fff;
@@ -1148,13 +1149,14 @@ p.free-order-description {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.catalog-item:hover:after {
+.preview-button {
   content: "";
   position: absolute;
-  padding: 1em;
+  padding: 0.5em;
   max-width: 12.500em;
-  bottom: 5%;
+  bottom: 0;
   left: 0;
+  transform: translate(22%, -50%);
   vertical-align: top;
   color: #fff;
   border-radius: 10em;
@@ -1167,28 +1169,42 @@ p.free-order-description {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  font-size: 1.125em;
   z-index: 5;
+}
+
+.preview-button:hover {
+  color: #fff;
 }
 
 .preview-button-block {
   display: none;
 }
 
+.catalog-item:hover > .preview-button-block {
+  display: block;
+}
+
 .features-block {
   padding: 0 1em;
+  min-height: 19em;
   background-color: #e1d5bc;
   background-image: url(./../img/pattern-waffle.png);
   background-repeat: repeat;
   border-radius: 1.2em;
-  margin: auto auto 2em;
+  margin: -2em auto 2em;
 }
 
 .features-info {
   padding: 1.5em 1em 0.5em 1em;
 }
 
+.features-info > h4 {
+  font-weight: 500;
+}
+
 .features-column {
-  width: 49%;
+  width: 48%;
 }
 
 .features-group {
@@ -1201,19 +1217,19 @@ p.free-order-description {
 
 .features-block ul {
   list-style: none;
-  padding: 0 0 0 4em;
+  padding: 0 0 0 3.5em;
 }
 
 .feature-item-1,
 .feature-item-2,
 .feature-item-3,
 .feature-item-4 {
-  margin: 0 0 1.5em 0;
+  margin: 1em 0 1.5em 0;
   color: #000;
   font-size: 1em;
+  line-height: 1.375em; 
   font-weight: 400;
 }
-
 
 .feature-item-1:before,
 .feature-item-2:before,
@@ -1241,13 +1257,13 @@ p.free-order-description {
 
 .feature-item-3:before  {
   top: 0em;
-  left: 35em;
+  left: 36em;
   background-image: url(./../img/strength-3.png);
 }
 
 .feature-item-4:before  {
   top: 5em;
-  left: 35em;
+  left: 36em;
   margin-right: 0;
   background-image: url(./../img/strength-4.png);
 }
@@ -1286,13 +1302,13 @@ p.free-order-description {
 }
 
 .subscribe-window form {
-  padding: 1em;
+  padding: 1.7em 1em;
 }
 
 .subscribe-window input[type=email] {
-  padding: 9px 14px;
+  padding: 10px 14px;
   margin: 3em 0.5em 0 0;
-  width: 65%;
+  width: 70%;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   flex-grow: 1;
@@ -1300,7 +1316,7 @@ p.free-order-description {
 
 .subscribe-window input[type=email]:hover {
   border: 2px solid #c7c6c5;
-  padding: 8px 13px;
+  padding: 9px 13px;
 }
 
 .subscribe-window input[type=email]:focus {
@@ -1309,9 +1325,9 @@ p.free-order-description {
 
 .subscribe-window button[type=submit] {
   margin: 2.5em 0 0 0;
-  position: relative;
   top: 0;
   left: 0;
+  padding: 0.7em;
 }
 
 .footer {
