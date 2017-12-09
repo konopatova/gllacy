@@ -621,7 +621,7 @@ ul.submenu-list-hidden {
   left: 18%;
   color: #000;
   border-radius: 3%;
-  background-color: #fff;
+  background-color: #f8f7f4;
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
 }
@@ -782,19 +782,18 @@ button.cart {
   position: absolute;
   color: #000;
   border-radius: 0.7em;
-  background-color: #fff;
+  background-color: #f8f7f4;
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
   transform: translate(-90%, 50%);
-  font-size: 0.875em;
 }
 
-.button-search {
+.search-block {
   display: inline-block;
   padding-left: 1em;
 }
 
-.button-search:hover .search-form {
+.search-block:hover .search-form {
   display: block;
 }
 
@@ -803,6 +802,80 @@ input[name=search] {
   padding: 9px 14px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
+}
+
+input[name=search]:hover {
+  border: 2px solid #c7c6c5;
+  padding: 8px 13px;
+}
+
+input[name=search]:focus {
+  font-weight: bold;
+}
+
+.login-block {
+  display: inline-block;
+}
+
+.login-form {
+  display: none;
+  max-width: 17.250em;
+  max-height: 13em;
+  padding: 1.5em;
+  position: absolute;
+  color: #000;
+  border-radius: 0.7em;
+  background-color: #f8f7f4;
+  box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transform: translate(-55%, 20%);
+}
+
+.login-form input[type=email],
+.login-form input[type=password] {
+  width: 100%;
+  padding: 9px 14px;
+  margin: 0 0 1em 0;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+.login-form input[type=email]:hover,
+.login-form input[type=password]:hover {
+  border: 2px solid #c7c6c5;
+  padding: 8px 13px;
+}
+
+.login-form input[type=email]:focus,
+.login-form input[type=password]:focus {
+  font-weight: bold;
+}
+
+.login-form-link a {
+  display: block;
+  color: #484847;
+  font-size: 0.875em;
+  font-weight: normal;
+}
+
+.login-form-link a:hover {
+  color: #e84d37;
+}
+
+.login-form button[type=submit] {
+  top: 0;
+  left: 0;
+  font-size: 0.875em;
+}
+
+.login-form-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-block:hover .login-form {
+  display: block;
 }
 
 .working-hours {
@@ -907,6 +980,7 @@ input[type=radio] {
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0 0.125em 0.125em 0 #ac1000;
+  border-bottom: 2px solid #ac1000;
   font-weight: bold; 
   border: none;
   cursor: pointer;
@@ -921,9 +995,13 @@ a.button-order:hover {
 .button-order:hover {
   background-color: #f38267;
   background-image: none;
-  border-bottom: 2px solid #ac1000;
-  box-shadow: 0 0.125em 0.125em 0 #ac1000;
+  border-bottom: 1px solid #ac1000;
 } 
+
+.button-order:active {
+  background: linear-gradient(to bottom,#f26843,#e74a35);
+  box-shadow: 0 2px 2px 0 #942718 inset;
+}
 
 .button-order.size-b {
   padding: 1em;
@@ -931,7 +1009,6 @@ a.button-order:hover {
   vertical-align: top; 
   bottom: 17em;
   width: 17.5em;
-  box-shadow: 0 0.125em 0.125em 0 #ac1000;
 }
 
 .button-order > h2 {
@@ -996,15 +1073,6 @@ p.free-order-description {
   left: 19em;
   padding: 0.7em 1.2em ;
   font-size: 1.125em;
-}
-
-.button-order:hover {
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.4);
-}
-
-.button-order:active {
-  background: linear-gradient(to bottom,#f26843,#e74a35);
-  box-shadow: 0 2px 2px 0 #942718 inset;
 }
 
 .catalog-block {
@@ -1228,6 +1296,15 @@ p.free-order-description {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   flex-grow: 1;
+}
+
+.subscribe-window input[type=email]:hover {
+  border: 2px solid #c7c6c5;
+  padding: 8px 13px;
+}
+
+.subscribe-window input[type=email]:focus {
+  font-weight: bold;
 }
 
 .subscribe-window button[type=submit] {
