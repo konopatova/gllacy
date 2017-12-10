@@ -457,37 +457,135 @@
 body {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   font-family: 'Roboto', 'Arial', sans-serif;
   text-decoration: none;
   background-color: #849d8f;
 }
 
-.page-wrapper {
-  margin: 0 auto;
+.container {
   max-width: 1200px;
   min-width: 900px;
+  margin: 0 auto;
   padding: 0 1.688em;
 }
 
-.background-slider-1 {
+.page-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.page-wrapper:before,
+.page-wrapper:after {
+  content: "";
+  visibility: hidden;
+}
+
+.page-wrapper:before {
+  background-image: url(./../img/slide-2.png);
+}
+
+.page-wrapper:after {
+  background-image: url(./../img/slide-3.png);
+}
+
+#slide1,
+#slide2,
+#slide3 {
+  display: none;
+}
+
+#slider-item-1:checked ~ .page-wrapper #slide1,
+#slider-item-2:checked ~ .page-wrapper #slide2,
+#slider-item-3:checked ~ .page-wrapper #slide3 {
+  display: block;
+}
+
+#slider-item-1:checked ~ .page-wrapper label[for='slider-item-1'],
+#slider-item-2:checked ~ .page-wrapper label[for='slider-item-2'],
+#slider-item-3:checked ~ .page-wrapper label[for='slider-item-3'] {
+  background-color: #fff;
+}
+
+#slider-item-1:checked ~ .page-wrapper {
   background-color: #849d8f;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./../img/slide-1.png);
+  background-repeat: no-repeat;
 }
 
-.background-slider-2 {
+#slider-item-2:checked ~ .page-wrapper {
   background-color: #8b99a9;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./../img/slide-2.png);
+  background-repeat: no-repeat;
 }
 
-.background-slider-3 {
+#slider-item-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./../img/slide-3.png);
+  background-repeat: no-repeat;
 }
 
+.slider-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: -3em auto;
+  overflow: hidden;
+}
+
+ul.slider-group {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 40em;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 1;
+}
+
+.slider-item-name {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 19.5rem;
+  width: 60%;
+  height: auto;
+  color: #fff;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 0%;
+  top: 75%;
+  z-index: 5;
+}
+
+.slider-controls label {
+  background-color: transparent;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.2em;
+  vertical-align: top;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect (0,0,0,0);
+}
 
 a {
   color:#fff;
@@ -538,7 +636,8 @@ h4 {
 .main-menu {
   display: flex;
   justify-content: space-between;
-  margin: 0.5em auto;
+  margin: 0 auto;
+  padding-top: 0.5em;
   color:#fff;
   font-weight: bold;
   z-index: 5;
@@ -892,85 +991,6 @@ input[name=search]:focus {
   text-align: right;
 }
 
-.slider-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  margin: -3em auto;
-  overflow: hidden;
-}
-
-.slider-item-1,
-.slider-item-2,
-.slider-item-3 {
-  position: relative;
-  height: 45em;
-  background-position: top  center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  z-index: 1;
-}
-
-.slider-item-1 {
-  background-image: url(./../img/1.png);
-}
-
-.slider-item-2 {
-  background-image: url(./../img/3.png);
-  display: none;
-}
-
-.slider-item-3 {
-  background-image: url(./../img/3.png);
-  display: none;
-}
-
-.slider-item-name {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  top: 19rem;
-  width: 42rem;
-  height: auto;
-  color: #fff;
-}
-
-.slider-shadow-group {
-  position: absolute;
-  top: 50%;
-  left: 48%;
-  border-radius: 10em; 
-  z-index: 0;
-}
-
-.slider-shadow-1 {
-  box-shadow: 0 0 15em 15em  #cff6e1; 
-}
-
-.slider-shadow-2 {
-  box-shadow: 0 0 15em 15em  #cde1f2;
-  display: none; 
-}
-
-.slider-shadow-3 {
-  box-shadow: 0 0 15em 15em  #f0dad1;
-  display: none; 
-}
-
-.radio-group {
-  position: absolute;
-  top: 60%;
-  left: 0%;
-  z-index: 5;
-}
-
-input[type=radio] {
-  width: 1.5em;
-  height: 1.5em;;
-}
-
 .button-order {
   vertical-align: top;
   color: #fff;
@@ -979,10 +999,10 @@ input[type=radio] {
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 0.125em 0.125em 0 #ac1000;
+  box-shadow: 0 0.01em 0.01em 0 #ac1000;
+  border: none;
   border-bottom: 2px solid #ac1000;
   font-weight: bold; 
-  border: none;
   cursor: pointer;
   text-decoration: none;
   z-index: 5;
@@ -995,7 +1015,7 @@ a.button-order:hover {
 .button-order:hover {
   background-color: #f38267;
   background-image: none;
-  border-bottom: 1px solid #ac1000;
+  border-bottom: 2px solid #ac1000;
 } 
 
 .button-order:active {
@@ -1004,15 +1024,15 @@ a.button-order:hover {
 }
 
 .button-order.size-b {
-  padding: 1em;
-  position: relative;
+  position: absolute;
+  padding: 0.4em 1.2em;
   vertical-align: top; 
-  bottom: 17em;
-  width: 17.5em;
+  bottom: 18%;
+  left: 38%;
 }
 
-.button-order > h2 {
-  text-shadow: 0.1em 0.1em 0.6em #ac1000;
+h2 .button-order  {
+  text-shadow: 0.05em 0.05em 0.1em #ac1000;
   padding: 0;
   margin: 0;
 }
@@ -1035,7 +1055,7 @@ a.button-order:hover {
 }
 
 .free-order {
-  margin: -11em 0 0 0;
+  margin: -2em 0 0 0;
   padding: 1.2em 1.2em 4em 1.2em;
 }
 
@@ -1164,9 +1184,9 @@ p.free-order-description {
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 0.125em 0.125em 0 #ac1000;
   font-weight: bold; 
-  border: none;
+  box-shadow: 0 0.01em 0.01em 0 #ac1000;
+  border-bottom: 2px solid #ac1000;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.125em;
@@ -1174,7 +1194,10 @@ p.free-order-description {
 }
 
 .preview-button:hover {
+  background-color: #f38267;
+  background-image: none;
   color: #fff;
+  border-bottom: 2px solid #ac1000;
 }
 
 .preview-button-block {
