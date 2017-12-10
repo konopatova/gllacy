@@ -621,9 +621,8 @@ h2 {
 
 h3 {
   text-align: center;
-  font-weight: 500;
   font-size: 1em;
-  line-height: 1.375em; 
+  line-height: 1.375em;
 }
 
 h4 {
@@ -1104,7 +1103,7 @@ p.free-order-description {
 }
 
 .catalog-item { 
-  max-width: 25%; 
+  max-width: 24%; 
   display: inline-block;
   position: relative;
   margin: 0 auto;
@@ -1118,10 +1117,9 @@ p.free-order-description {
   margin-right: 0;
 }
 
-.catalog-item a.catalog-item-name { 
+a.catalog-item-name { 
   width: 100%;
   padding: 0 0.5em;
-  margin: 0 0 1.5em 0;
   text-decoration: none;
   text-align: center;
   border-bottom: 1px solid rgba(255,255,255,.2);
@@ -1357,12 +1355,6 @@ p.free-order-description {
   padding: 0.7em;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .social-group svg {
   opacity: .6;
   width: 40px;
@@ -1372,7 +1364,7 @@ p.free-order-description {
 }
 
 .social-group svg:hover {
-  opacity: .5;
+  opacity: 0.8;
   width: 40px;
   height: 40px;
   border: 4px solid #fff;
@@ -1383,10 +1375,12 @@ p.free-order-description {
 .footer {
   display: flex;
   margin: 2em 0;
+  padding-top: 1em;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.813em;
+  border-top: 1px solid rgba(255,255,255, 0.2);
 }
 
 .footer a {
@@ -1445,9 +1439,6 @@ p.free-order-description {
   height: 400px;
 }
 
-
-/****************************catalog.html*******************************/
-
 .breadcrumbs .link {
   font-size: 0.875em;
   font-weight: normal;
@@ -1463,3 +1454,96 @@ p.free-order-description {
   padding: 0 0 0 0;
   text-decoration: none;
 }
+
+.catalog-title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 2em;
+  margin: 0.3em 0 0 0;
+}
+
+.catalog-item-row {
+  margin-bottom: -4em;
+  padding: 0;
+}
+
+.catalog-item-row:last-child {
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+#sort {
+  width: 12.125em;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  font-weight: bold;
+  background-color: rgba(255,255,255, 0.2);
+  color: #fff;
+}
+
+#sort:hover {
+  color: #000;
+}
+
+#sort option {
+  color: #000;
+}
+
+.filter-title {
+  font-weight: normal;
+  color: #fff;
+  font-size: 0.875em;
+  margin: 1.5em 0 0.5em 1em;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.pagination a.current-page {
+  background-color: #fff;
+  color: #000;
+}
+
+.pagination a:last-child {
+  margin: 0 0 0 0.5em;
+  color: #fff;
+  font-weight: normal;
+}
+
+.pagination a:first-child {
+  margin: 0 1em 0 0;
+  color: rgba(255,255,255,.4);
+  font-weight: normal;
+}
+
+.pagination a:hover{
+  background-color: rgba(255,255,255,.4);
+  color: #fff;
+}
+
+.pagination a:active{
+  background-color: #fff;
+  color: #000;
+}
+
