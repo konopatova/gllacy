@@ -731,7 +731,6 @@ li.submenu-list-item {
 .submenu-list li:hover > .submenu-list-hidden  {
   display: block;
   opacity: 1;
-  transition: 0.5s;
 }
 
 .submenu-item-name a {
@@ -1109,8 +1108,9 @@ p.free-order-description {
   margin: 0 auto;
   vertical-align: top;
   margin: 2.5em 0 auto;
-  padding: 0 0.5em;
+  padding: 0 0.2em;
   align-self: center;
+  transition: 0.7s ease;
 }
 
 .catalog-item:nth-child(4n) { 
@@ -1208,6 +1208,7 @@ a.catalog-item-name {
 
 .catalog-item:hover > .preview-button-block {
   display: block;
+  transition: 0.7s ease;
 }
 
 .features-block {
