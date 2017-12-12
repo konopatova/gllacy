@@ -1544,6 +1544,21 @@ span.filter-title {
   background-image: url(./../img/checkbox-on.png);
 }
 
+.checkbox-group label:hover:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(./../img/checkbox-off-hover.png);
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked:hover + label:after {
+  background-image: url(./../img/checkbox-on-hover.png);
+}
+
 .button-submit {
   position: absolute;
   top: 17.9%;
