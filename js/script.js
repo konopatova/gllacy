@@ -1,4 +1,4 @@
-var buttonSearchBg = document.querySelector('.button.search');
+/*var buttonSearchBg = document.querySelector('.button.search');
 var buttonEnterBg = document.querySelector('.button.enter');
 var buttonCartBg = document.querySelector('.button.cart');
 var buttonSearch = document.querySelector('#search');
@@ -36,14 +36,14 @@ buttonCartBg.onmouseout = function() {
     this.classList.remove ('animate-button-bg');
     buttonCart.classList.remove ('animate-svg');
 };
-
+/*
 
 
 /********************************************/
 
 function initMap() {
 var adress = {lat: 59.9387942, lng: 30.3208946};
-var pin ='https://biobreak.files.wordpress.com/2013/10/wavy3.jpg'
+var pin ='/img/hit.png'
 var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
     center: adress 

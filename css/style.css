@@ -584,7 +584,7 @@ ul.slider-group {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect (0,0,0,0);
+  clip: rect(0,0,0,0);
 }
 
 a {
@@ -654,6 +654,7 @@ h4 {
   margin: 4em 0.5em 4em 0;
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.2);
+  will-change: background-color,color,text-decoration;
 }
 
 ul {
@@ -686,9 +687,9 @@ li.submenu-list-item {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition:  0.1s ease;
+  -moz-transition:  0.1s ease;
+  transition: 0.1s ease;
 }
 
 .main-menu-left .link:active {
@@ -776,6 +777,13 @@ li.submenu-list-item {
   margin: 1em 0 0 0;
 }
 
+.login-block,
+.search-block,
+.cart-block {
+  display:inline-block;
+  vertical-align: top;
+}
+
 button.search,
 button.enter,
 button.cart {
@@ -818,12 +826,28 @@ button.cart {
   fill: #fff;
 }
 
-.search svg:hover,
-.enter svg:hover,
-.cart svg:hover {
+.search-block:hover > .button.search svg,
+.login-block:hover > .button.enter svg,
+.cart-block:hover > .button.cart svg {
   fill: #000;
 }
 
+.search-block:hover > .button,
+.login-block:hover > .button,
+.cart-block:hover > .button {
+  color: #000;
+  background-color:#fff;
+}
+
+.button.cart svg path:first-child {
+  fill: none; 
+}
+
+.cart-block:hover > .button.cart svg path:first-child {
+  fill: #e84d37; 
+}
+
+/*
 .animate-svg {
   -webkit-animation: animate-svg 0.4s 0s ease-in-out;
     -moz-animation:  animate-svg 0.4s 0s ease-in-out;
@@ -857,7 +881,7 @@ button.cart {
     color: #000;
     }
 }
-
+*/
 button {
   background: none;
 }
@@ -1110,7 +1134,8 @@ p.free-order-description {
   margin: 2.5em 0 auto;
   padding: 0 0.2em;
   align-self: center;
-  transition: 0.7s ease;
+  transition: 0.2s ease;
+  will-change: background-color, border-radius, box-shadow;
 }
 
 .catalog-item:nth-child(4n) { 
@@ -1370,7 +1395,7 @@ a.catalog-item-name {
   height: 40px;
   border: 4px solid #fff;
   border-radius: 20px;
-  transition: 1s;
+  transition: 0.2s ease;
 }
 
 .footer {
@@ -1557,20 +1582,6 @@ span.filter-title {
 
 .filter-checkbox:checked:hover + label:after {
   background-image: url(./../img/checkbox-on-hover.png);
-}
-
-.filter-item-2:after,
-.filter-item-2:before {
-  content: "";
-  visibility: hidden;
-}
-
-.filter-item-2:before {
-  background-image: url(./../img//checkbox-on-hover.png);
-}
-
-.filter-item-2:after {
-  background-image: url(./../img//checkbox-off-hover.png);
 }
 
 .button-submit {
