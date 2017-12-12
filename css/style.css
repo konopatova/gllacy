@@ -1478,6 +1478,7 @@ a.catalog-item-name {
   padding: 0.5em;
   border-radius: 1.5em;
   font-weight: bold;
+  font-size: 1em;
   background-color: rgba(255,255,255, 0.2);
   color: #fff;
 }
@@ -1490,16 +1491,84 @@ a.catalog-item-name {
   color: #000;
 }
 
-.filter-title {
+span.filter-title {
   font-weight: normal;
   color: #fff;
   font-size: 0.875em;
-  margin: 1.5em 0 0.5em 1em;
+  margin: 1.2em 0 0.5em 1em;
 }
 
-.filter-block {
+.filter-item-1 {
   display: flex;
   flex-direction: column;
+}
+
+.filter-item-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group {
+  width: 45em;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  font-weight: 500;
+  background-color: rgba(255,255,255, 0.2);
+  color: #fff;
+}
+
+.filter-checkbox {
+  display: none;
+}
+
+.checkbox-group label {
+  position: relative;
+  padding-left: 30px;
+  margin: 0 10px 0 10px; 
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.checkbox-group label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(./../img/checkbox-off.png);
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked + label:after {
+  background-image: url(./../img/checkbox-on.png);
+}
+
+.button-submit {
+  position: absolute;
+  top: 17.9%;
+  left: 60%;
+  padding: 0.5em 0.7em;
+  border-radius: 1.5em;
+  font-weight: 500;
+  border: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.button-submit:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.button-submit:active {
+  background-color: #eaeaea;
+  color: #000;
+  font-weight: bold;
+  box-shadow: inset 0px 1px 2px 0px rgb(75, 75, 75);
 }
 
 .pagination {

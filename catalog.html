@@ -93,6 +93,8 @@
         <div class="catalog-title">Сливочное мороженое</div>
 
         <div class="filter-block">
+
+            <div class="filter-item-1">
             <span class="filter-title">Сортировка:</span>
             <select name="sort" id="sort">
                 <option value="popular">по популярности</option>
@@ -100,7 +102,29 @@
                 <option value="expensive">сначала дорогие</option>
                 <option value="fat">по жирности</option>
             </select>
+            </div>
+            
+            <div class="filter-item-2">
+                <span class="filter-title">Наполнители:</span>
+                 <div class="checkbox-group">
+                <input type="checkbox" class="filter-checkbox" id ="ch1" checked>
+                <label for="ch1">шоколадные</label>
+                <input type="checkbox" class="filter-checkbox" id ="ch2" checked>
+                <label for="ch2">сахарные присыпки</label>
+                <input type="checkbox" class="filter-checkbox" id ="ch3">
+                <label for="ch3">фрукты</label>
+                <input type="checkbox" class="filter-checkbox" id ="ch4">
+                <label for="ch4">сиропы</label>
+                <input type="checkbox"  class="filter-checkbox" id ="ch5">
+                <label for="ch5">джемы</label>
+                </div> 
+        </div> 
+                <div class="filter-submit">
+                    <button type="submit" class="button-submit">Применить</button>
+                </div>
+
         </div>
+        
 
         <div class="catalog-block">
             <div class="catalog-item-row">
