@@ -1559,6 +1559,20 @@ span.filter-title {
   background-image: url(./../img/checkbox-on-hover.png);
 }
 
+.filter-item-2:after,
+.filter-item-2:before {
+  content: "";
+  visibility: hidden;
+}
+
+.filter-item-2:before {
+  background-image: url(./../img//checkbox-on-hover.png);
+}
+
+.filter-item-2:after {
+  background-image: url(./../img//checkbox-off-hover.png);
+}
+
 .button-submit {
   position: absolute;
   top: 17.9%;
