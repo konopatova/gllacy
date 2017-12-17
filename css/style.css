@@ -1638,6 +1638,8 @@ span.filter-title {
 
 .filter-block {
   margin-bottom: 2em;
+  width: 100%;
+  position: relative;
 }
 
 .filter-item-1 {
@@ -1703,8 +1705,8 @@ span.filter-title {
 
 .button-submit {
   position: absolute;
-  top: 17.9%;
-  left: 60%;
+  top: 76%;
+  left: 65%;
   padding: 0.5em 0.7em;
   border-radius: 1.5em;
   font-weight: 500;
@@ -1774,3 +1776,6 @@ span.filter-title {
   color: #000;
 }
 
+.catalog-item-row > .catalog-item  {
+  margin: 0 1em 0 0;
+}
