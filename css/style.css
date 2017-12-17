@@ -797,6 +797,10 @@ button.cart {
   margin-right: 0; 
 }
 
+button.cart.active {
+  display: none;
+}
+
 .button {
   border-radius: 10em;
   padding: 0.3em; 
@@ -837,10 +841,22 @@ button.cart {
   fill: none; 
 }
 
+.cart-block:hover > .button.cart {
+  display: none;
+}
+
+.cart-block:hover > .button.cart.active {
+  display: block;
+}
+
 .cart-block:hover > .button.cart svg path:first-child {
   fill: #e84d37; 
 }
 
+button span {
+  position: relative;
+  top: -3px;
+}
 /*
 .animate-svg {
   -webkit-animation: animate-svg 0.4s 0s ease-in-out;
