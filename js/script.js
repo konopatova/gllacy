@@ -55,9 +55,9 @@ var marker = new google.maps.Marker({
     draggable:true,
     animation: google.maps.Animation.DROP,
     position: {lat: 59.9381, lng: 30.321},
-    title:"Астрологи объявили неделю смешных шуток",
+    title:"",
         });
       }
-map.title = 'Астрологи объявили неделю смешных шуток';
+map.title = '';
 icon.style.borderRadius = '10px';
 icon.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
