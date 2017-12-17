@@ -1486,7 +1486,7 @@ p.free-order-description {
   background-color: rgba(255,255,255,.98);
   border-radius: 15px;
   box-sizing: border-box;
-  z-index: 6;
+  z-index: 3000;
 }
 
 .map-contact-info {
