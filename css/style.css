@@ -1195,6 +1195,7 @@ p.free-order-description {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .preview-button {
@@ -1486,7 +1487,7 @@ p.free-order-description {
   background-color: rgba(255,255,255,.98);
   border-radius: 15px;
   box-sizing: border-box;
-  z-index: 3000;
+  z-index: 10;
 }
 
 .map-contact-info {
@@ -1601,7 +1602,7 @@ p.free-order-description {
 }
 
 .catalog-item-row {
-  margin-bottom: -4em;
+  margin-bottom: -2em;
   padding: 0;
 }
 
@@ -1633,6 +1634,10 @@ span.filter-title {
   color: #fff;
   font-size: 0.875em;
   margin: 1.2em 0 0.5em 1em;
+}
+
+.filter-block {
+  margin-bottom: 2em;
 }
 
 .filter-item-1 {
