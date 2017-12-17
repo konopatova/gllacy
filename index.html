@@ -147,45 +147,66 @@
 
                  <div class="catalog-block">
                         <div class="catalog-item status">
+                               <div class="catalog-item-inner">
                             <img src="img/1.png" alt="" class="catalog-item-1">
-                                <h3><a class="catalog-item-name" href="#">   
-                                Сливочное с апельсиновым джемом и цитрусовой стружкой
-                            </a></h3>
+                               
+                            <div class="catalog-item-info">
                             <span class="catalog-item-price">310₽</span>
                             <span class="catalog-item-unit">/кг</span>
+                            </div> 
+                            </div> 
+                            <a class="catalog-item-name" href="#">   
+                                Сливочное с апельсиновым джемом и цитрусовой стружкой
+                            </a>
                             <div class="preview-button-block">
                                 <a href="#" class="preview-button" alt="">Быстрый просмотр</a>
                             </div>
                         </div>
+
                         <div class="catalog-item status">
+                                <div class="catalog-item-inner">
                              <img src="img/2.png" alt="" class="catalog-item-2">
-                             <h3> <a class="catalog-item-name" href="#">                       
-                                  Сливочно-кофейное с кусочками шоколада
-                              </a></h3>
+                            
+                              <div class="catalog-item-info">
                               <span class="catalog-item-price">380₽</span>
                               <span class="catalog-item-unit">/кг</span>
+                              </div>
+                              </div>
+                              <a class="catalog-item-name" href="#">                       
+                                    Сливочно-кофейное с кусочками шоколада
+                                </a>
                               <div class="preview-button-block">
                                     <a href="#" class="preview-button" alt="">Быстрый просмотр</a>
                                 </div>
-                        </div>
+                    </div>
                         <div class="catalog-item status">
+                                <div class="catalog-item-inner">
                              <img src="img/3.png" alt="" class="catalog-item-3">
-                               <h3><a  class="catalog-item-name" href="#">
-                                     Сливочно-клубничное с присыпкой из белого шоколада
-                              </a></h3>
+                              
+                              <div class="catalog-item-info">
                               <span class="catalog-item-price">355₽</span>
                               <span class="catalog-item-unit">/кг</span>
+                            </div>
+                            </div> 
+                            <a  class="catalog-item-name" href="#">
+                                     Сливочно-клубничное с присыпкой из белого шоколада
+                              </a>
                               <div class="preview-button-block">
                                     <a href="#" class="preview-button" alt="">Быстрый просмотр</a>
                                 </div>
                         </div>
                         <div class="catalog-item status">
+                                <div class="catalog-item-inner">
                              <img src="img/4.png" alt="" class="catalog-item-4">
-                             <h3><a  class="catalog-item-name" href="#">                      
-                                     Сливочное крем-брюле с карамельной подливкой
-                         </a></h3>
+                             
+                         <div class="catalog-item-info">
                          <span class="catalog-item-price">415₽</span>
                          <span class="catalog-item-unit">/кг</span>
+                        </div>
+                        </div>
+                        <a  class="catalog-item-name" href="#">                      
+                                     Сливочное крем-брюле с карамельной подливкой
+                         </a>
                          <div class="preview-button-block">
                                 <a href="#" class="preview-button" alt="">Быстрый просмотр</a>
                             </div>
@@ -195,8 +216,8 @@
          
                      <div class="features-block">
                             <div class="features-info">
-                                <h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже 
-                                    мороженого собственного производства на развес</h4>
+                                <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже 
+                                    мороженого собственного производства на развес</h3>
                             </div>
                     
                             <div class="features-group">
@@ -251,9 +272,51 @@
       </div>
     </main>
 </div>
-      <div class="map" id="map"></div>
+      <div class="map" id="map">
+            <div class="map-contact">
+                <div class="map-contact-info">
+                    <p class="contact-text">
+                      Адрес главного офиса и
+                      <br> офлайн-магазина
+                      <br>
+                      <span>ул.&nbsp;Большая&nbsp;Конюшенная&nbsp;
+                  19/8, Санкт-Петербург</span>
+                    </p>
+                    <p class="contact-text">
+                      Для заказов по телефону:
+                      <br>
+                      <span>8&nbsp;812&nbsp;450-25-25</span>
+                      <br> (с 10 до 20 ежедневно)
+                    </p>
+                </div>
+                    <a href="#" class="button-order size-s">Форма обратной связи</a>
+                  </div>
+      </div>
 <div class="container">
       <footer class="footer">
+
+            <div class="modal-contact">
+                    <button class="modal-contact-close" type="button">Назад</button>
+                    <p class="modal-contact-text">Мы обязательно вам ответим!</p>
+                    <form class="modal-contact-form" action="">
+                        <div class="field-group">
+                      <div class="field">
+                        <input class="modal-input item" type="text" placeholder="Как вас зовут" name="name" id="contact-name" required="">
+                        <label class="modal-label" for="contact-name"></label>
+                      </div>
+                      <div class="field">
+                        <input class="modal-input item" type="text" placeholder="Ваша почта для ответа?" name="email" id="contact-email" required="">
+                        <label class="modal-label" for="contact-email" ></label>
+                      </div>
+                      <div class="field">
+                        <textarea class="modal-input" placeholder="Напишите что-нибудь..." name="text" rows="6" id="input-text" required=""></textarea>
+                        <label class="modal-label" for="input-text" ></label>
+                      </div>
+                    </div>
+                        <button class="button-order size-s" type="submit" name="send">Отправить</button>
+                    </form>
+                  </div>
+
          <div class="social-group">
                 
             <a class="twitter" href="#">
