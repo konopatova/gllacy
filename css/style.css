@@ -1477,10 +1477,10 @@ p.free-order-description {
 }
 
 .map-contact {
-  position: relative;
+  position: absolute;
   max-width: 19.3em;
   min-height: 19em;
-  top: 14%;
+  top: 80%;
   left: 64%;
   padding: 1.8em 1.7em;
   background-color: rgba(255,255,255,.98);
