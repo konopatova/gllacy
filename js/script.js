@@ -43,7 +43,7 @@ buttonCartBg.onmouseout = function() {
 
 function initMap() {
 var adress = {lat: 59.9387942, lng: 30.3208946};
-var pin ='/img/hit.png'
+var pin ="./img/pin.png"
 var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
     center: adress 

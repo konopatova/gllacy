@@ -1564,9 +1564,9 @@ p.free-order-description {
   outline: none;
   background-image: url(./../img/heart.svg);
   background-repeat: no-repeat;
-  color: #000;
+  fill: #000;
   background-color: transparent;
-  right: 10px;
+  right: -30px;
   top: 10px;
 }
 
