@@ -1173,11 +1173,12 @@ p.free-order-description {
   content: "";
   position: absolute;
   margin: 0 auto;
-  width: 4em;
-  height: 4em;
   background-color: #fff;
-  background-image: url(./../img/hit.png);
+  background-image: url(./../img/sprites.png);
   opacity: 1;
+  background-position: -48px -94px ;
+	width: 61px;
+	height: 61px;
   top: 0;
   left: 0;
   border-radius: 10em; 
@@ -1301,37 +1302,40 @@ p.free-order-description {
 .feature-item-2:before,
 .feature-item-3:before,
 .feature-item-4:before {
+  margin: -0.8em 0 0 -3.5em;
   position: absolute;
   content: "";
-  width: 3.5em;
-  height: 3.5em;
   background-repeat: no-repeat;
 }
 
 .feature-item-1:before {
-  top: 0em;
-  left: 0;
-  background-image: url(./../img/strength-1.png);
+  background-position: -52px -200px ;
+	width: 49px;
+  height: 49px;
+  background-image: url(./../img/sprites.png);
 }
 
 
 .feature-item-2:before  {
-  top: 5.5em;
-  left: 0;
-  background-image: url(./../img/strength-2.png);
+  background-position: -51px -299px ;
+	width: 49px;
+  height: 49px;
+  background-image: url(./../img/sprites.png);
 }
 
 .feature-item-3:before  {
-  top: 0em;
-  left: 35.5em;
-  background-image: url(./../img/strength-3.png);
+  background-position: -152px -201px ;
+	width: 49px;
+  height: 49px;
+  background-image: url(./../img/sprites.png);
 }
 
 .feature-item-4:before  {
-  top: 5.5em;
-  left: 35.5em;
+  background-position: -151px -301px ;
+	width: 49px;
+	height: 49px;
   margin-right: 0;
-  background-image: url(./../img/strength-4.png);
+  background-image: url(./../img/sprites.png);
 }
 
 .blog {
@@ -1445,12 +1449,13 @@ p.free-order-description {
 .documents:before {
   content: "";
   position: absolute;
-  width: 1.5em;
-  height: 1.5em;
+  background-position: -217px -21px ;
+	width: 15px;
+	height: 13px;
   top: 0;
   left: -1.8em;
   font-size: 12px;
-  background-image: url(./../img/heart.png);
+  background-image: url(./../img/sprites.png);
   background-repeat: no-repeat;
 }
 
@@ -1712,14 +1717,19 @@ span.filter-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 23px;
-  height: 23px;
-  background-image: url(./../img/checkbox-off.png);
+  background-position: -15px -16px ;
+	width: 20px;
+	height: 20px;
+  background-image: url(./../img/sprites.png);
   background-repeat: no-repeat;
 }
 
 .filter-checkbox:checked + label:after {
-  background-image: url(./../img/checkbox-on.png);
+  background-image: url(./../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -114px -16px ;
+	width: 24px;
+	height: 20px;
 }
 
 .checkbox-group label:hover:after{
@@ -1727,14 +1737,19 @@ span.filter-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 23px;
-  height: 23px;
-  background-image: url(./../img/checkbox-off-hover.png);
+  background-image: url(./../img/sprites.png);
+  background-position: -66px -17px ;
+	width: 20px;
+	height: 20px;
   background-repeat: no-repeat;
 }
 
 .filter-checkbox:checked:hover + label:after {
-  background-image: url(./../img/checkbox-on-hover.png);
+  background-image: url(./../img/sprites.png);
+  background-position: -162px -17px ;
+	width: 24px;
+  height: 20px;
+  background-repeat: no-repeat;
 }
 
 .filter-radio {
