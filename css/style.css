@@ -565,6 +565,7 @@ ul.slider-group {
   position: absolute;
   left: 0%;
   top: 76.5%;
+  font-size: 0;
   z-index: 5;
 }
 
@@ -573,7 +574,7 @@ ul.slider-group {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-right: 0.3em;
+  margin-right: 0.5rem;
   vertical-align: top;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -1139,13 +1140,14 @@ p.free-order-description {
 .catalog-item { 
   min-width: 23.5%;
   max-width: 23.5%;
-  min-height:  25em;
+  min-height:  25rem;
   display: inline-block;
   position: relative;
   vertical-align: top;
   align-self: center;
   text-align: center;
   transition: 0.2s ease;
+  font-size: 0;
   will-change: background-color, border-radius, box-shadow;
 }
 
@@ -1155,13 +1157,14 @@ p.free-order-description {
 
 .catalog-item-inner {
   margin-bottom: 0.6em;
+  font-size: 1rem; 
 }
 
 .catalog-item-name { 
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.375em;
   text-align: center;
   text-decoration: none;
@@ -1181,7 +1184,8 @@ p.free-order-description {
 	height: 61px;
   top: 0;
   left: 0;
-  border-radius: 10em; 
+  border-radius: 10em;
+  font-size: 1rem; 
   z-index: 5;
 }
 
@@ -1233,7 +1237,7 @@ p.free-order-description {
   border-bottom: 2px solid #ac1000;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   z-index: 5;
 }
 
@@ -1888,7 +1892,7 @@ span.filter-title {
 }
 
 .catalog-item-row > .catalog-item  {
-  margin: 0 1.15em 0 0;
+  margin: 0 1.15rem 0 0;
 }
 
 .catalog-item-row > .catalog-item:nth-child(4n)  {
