@@ -1151,6 +1151,11 @@ p.free-order-description {
   will-change: background-color, border-radius, box-shadow;
 }
 
+.catalog-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 .catalog-item:nth-child(4n) { 
   margin-right: 0;
 }
