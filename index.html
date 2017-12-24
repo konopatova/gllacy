@@ -55,7 +55,7 @@
           <div class="login-block">
                 <form class="login-form" action="#">
                     <input type="email" name="email" id="email"  placeholder="Электронная почта" multiple>
-                    <input type="password" name="email" id="email"  placeholder="Пароль">
+                    <input type="password" name="email" id="password"  placeholder="Пароль">
                     
                     <div class="login-form-box">
                         <button class="button-order size-s" type="submit">
@@ -269,7 +269,7 @@
 		<form action="#">
 		<label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. 
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label> 
-        <input type="email" name="email" id="email"  placeholder="Электронная почта" multiple>
+        <input type="email" name="email" id="email-2"  placeholder="Электронная почта" multiple>
         <button class="button-order size-s" type="submit">
                Отправить
             </button>
@@ -284,6 +284,7 @@
       <div class="map" id="map"></div>
       <div class="map-contact">
                 <div class="map-contact-info">
+                    
                     <p class="contact-text">
                       Адрес главного офиса и
                       <br> офлайн-магазина
@@ -298,17 +299,18 @@
                       <br> (с 10 до 20 ежедневно)
                     </p>
                 </div>
-                    <a href="#" class="button-order size-s">Форма обратной связи</a>
-                  </div>     
+                    <button class="button-order size-s" type="submit">Форма обратной связи</button>
+                 
+        </div>     
       
     </section>
 <div class="container">
       <footer class="footer">
 
             <div class="modal-contact">
-                    <div class="modal-contact-close"></div>
+                    <button class="modal-contact-close"></button>
                     <p class="modal-contact-text">Мы обязательно вам ответим!</p>
-                    <form class="modal-contact-form" action="">
+                    <form class="modal-contact-form" action="#">
                         <div class="field-group">
                       <div class="field">
                         <input class="modal-input item" type="text" placeholder="Как вас зовут" name="name" id="contact-name" required="">
@@ -357,7 +359,7 @@
 
       </footer>
 
-<script src="/gllacy/js/script.js"></script>
+<script src="/./js/script.js"></script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWhpIHeoDR2WQo3ex7nscLdKu3-JqOY-E&callback=initMap">
 </script>
