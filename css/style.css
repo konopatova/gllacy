@@ -644,12 +644,13 @@ h3 {
   flex-basis: 30em;
   flex-grow: 2;
   position: relative;
+  font-size: 0;
 }
 
 .main-menu-left .link {
-  font-size: 1em;
-  padding: 0 0.5em;
-  margin: 5em 0.1em 4em 0.5em;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 5rem 0.1rem 4rem 0.5rem;
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.2);
   will-change: background-color,color,text-decoration;
@@ -660,13 +661,14 @@ ul {
   display: inline-block;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
 li.submenu-list-item {
   display: inline-block;
   vertical-align: top;
-  margin: 0;
-  padding: 0;
+  margin: 0.1rem;
+  font-size: 1rem;
 }
 
 .main-menu-left .current-page {
@@ -676,9 +678,13 @@ li.submenu-list-item {
   text-decoration: none;
 }
 
+.main-menu-left .logo {
+  display: inline-block;
+  margin: 0 0 -2rem 0;
+}
+
 .main-menu-left .link:hover {
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  margin: 5em 0.1em 4em 0.5em;
+  padding: 0.5em 0.48em 0.5em 0.5em;
   border-radius: 10em;
   background-color: #fff;
   color: #000;
@@ -701,11 +707,6 @@ li.submenu-list-item {
 
 .main-menu-left .link:last-child {
   margin-right: 0;
-}
-
-.main-menu-left .logo {
-  display: inline-block;
-  margin: 0 0 -2em 0;
 }
 
 ul.submenu-list-hidden {
@@ -769,9 +770,9 @@ li.submenu-list-item {
 }
 
 .main-menu-right {
-  font-size: 1em;
-  line-height: 1.125em;
-  margin: 0.8em 0 0 0;
+  font-size: 0;
+  line-height: 1.125rem;
+  margin: 0.8rem 0 0 0;
 }
 
 .login-block,
@@ -779,6 +780,7 @@ li.submenu-list-item {
 .cart-block {
   display:inline-block;
   vertical-align: top;
+  font-size: 0;
 }
 
 button.search,
@@ -786,12 +788,18 @@ button.enter,
 button.cart {
   display:inline-block;
   vertical-align: top;
-  margin: 0 0.5em 1.5em 0; /*10px 24px*/
+  margin: 0 0.6rem 1.5rem 0; /*10px 24px*/
   border: none;
-  border-radius: 10em;
-  font-size: 0.8em;
+  border-radius: 10rem;
+  font-size: 0.8rem;
   color:#fff;
   font-weight: 600;
+}
+
+button.search {
+  width: 2.5em;
+  height: 2.5em; 
+  border-radius: 50%;
 }
 
 button.enter {
@@ -800,7 +808,8 @@ button.enter {
 
 button.cart {
   width: 9em;
-  margin-right: 0; 
+  margin-right: 0;
+  text-align: left;
 }
 
 button.cart.active {
@@ -808,8 +817,8 @@ button.cart.active {
 }
 
 .button {
-  border-radius: 10em;
-  padding: 0.3em; 
+  border-radius: 10rem;
+  padding: 0.3rem; 
   background-color: rgba(255,255,255, 0.2); 
   cursor: pointer;
 }
@@ -819,6 +828,12 @@ button.cart.active {
 .cart svg {
   width: 20px;
   height: 20px;
+  fill: #fff;
+}
+
+.search svg {
+  width: 17px;
+  height: 17px;
   fill: #fff;
 }
 
@@ -853,50 +868,21 @@ button.cart.active {
 
 button span {
   position: relative;
-  top: -4px;
-}
-/*
-.animate-svg {
-  -webkit-animation: animate-svg 0.4s 0s ease-in-out;
-    -moz-animation:  animate-svg 0.4s 0s ease-in-out;
-      -o-animation:  animate-svg 0.4s 0s ease-in-out;
-         animation:  animate-svg 0.4s 0s ease-in-out;
+  top: -5px;
 }
 
-.animate-button-bg {
-       -webkit-animation: animate-button-bg 0.4s  0s ease-in-out;
-         -moz-animation:  animate-button-bg 0.4s  0s ease-in-out;
-           -o-animation:  animate-button-bg 0.4s  0s ease-in-out;
-              animation:  animate-button-bg 0.4s  0s ease-in-out;
+.button.cart > span {
+  padding: 0 0.7em;
+  top: 0px;
 }
 
-@keyframes animate-svg {
-  0%,100% {
-    fill: #fff;
-  } 
-  100% {
-    fill: #000;
-    }
-}
-
-@keyframes animate-button-bg {
-  0%,100% {
-    background-color: rgba(255,255,255, 0.2);
-    color: #fff;
-  } 
-  100% {
-    background-color: #fff;
-    color: #000;
-    }
-}
-*/
 button {
   background: none;
 }
 
-button.enter > svg,
-button.cart > svg {
-  margin: 0 0.2em 0 0; 
+button.enter  svg,
+button.cart  svg {
+  margin: 0 0.3rem 0 0; 
 }
 
 .search-form {
@@ -909,11 +895,11 @@ button.cart > svg {
   background-color: #f8f7f4;
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
+  font-size: 0.8rem;
   transform: translate(-90%, 50%);
 }
 
 .search-block {
-  display: inline-block;
   padding-left: 1em;
 }
 
@@ -937,10 +923,6 @@ input[name=search]:focus {
   font-weight: bold;
 }
 
-.login-block {
-  display: inline-block;
-}
-
 .login-form {
   display: none;
   max-width: 17.250em;
@@ -952,6 +934,7 @@ input[name=search]:focus {
   background-color: #f8f7f4;
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
+  font-size: 0.9rem;
   transform: translate(-55%, 20%);
 }
 
@@ -1002,17 +985,24 @@ input[name=search]:focus {
   display: block;
 }
 
+.menu-info {
+  position: relative;
+  top: -0.4rem;
+}
+
 .working-hours {
   display: block;
-  font-size: 0.875em; 
-  line-height: 1em; 
+  font-size: 0.875rem; 
+  line-height: 1rem; 
   text-align: right;
 }
 
 .tel {
   display: block;
-  font-size: 1.375em; 
-  line-height: 1.500em;
+  position: relative;
+  font-size: 1.375rem; 
+  line-height: 1.500rem;
+  top: 0.2em;
   text-align: right;
 }
 
@@ -1587,6 +1577,10 @@ img {
   background-color: transparent;
   right: -30px;
   top: 10px;
+}
+
+textarea {
+  resize: none;
 }
 
 .modal-input.item {
