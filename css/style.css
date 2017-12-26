@@ -1001,8 +1001,8 @@ input[name=search]:focus {
 
 .cart-form {
   display: none;
-  min-width: 48em;
-  max-width: 48em;
+  min-width: 46em;
+  max-width: 46em;
   max-height: 25em;
   padding: 1.5em;
   position: absolute;
@@ -1014,6 +1014,52 @@ input[name=search]:focus {
   font-size: 0.8rem;
   font-weight: normal;
   transform: translate(-55%, 20%);
+}
+
+table {
+  width: 100%;
+  display: table-row;
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+.order-item-name {
+  color:#000;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.table {
+display: table;
+margin-bottom: 1em;
+}
+
+.line {
+border-bottom: 1px solid #c7c6c5;
+margin-bottom: 1em;
+}
+
+td {
+margin: 0 10em 0 0;
+}
+
+.order-total {
+display: flex;
+justify-content: flex-end;
+margin-bottom: 1em;
+font-weight: bold;
+}
+
+
+
+.delete {
+  display: inline-block;
+  background-image: url(./../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -168px -121px ;
+	width: 11px;
+	height: 11px;
+
 }
 
 .cart-order-item {
