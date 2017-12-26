@@ -602,7 +602,6 @@ a {
 
 a:hover {
   color: #ffbc9e;
-  font-weight: 500;
 }
 
 h1,
@@ -1221,7 +1220,8 @@ p.free-order-description {
   z-index: 4;
 }
 
-.catalog-item { 
+.catalog-item {
+  padding: 0 0.6rem;
   min-width: 23.5%;
   max-width: 23.5%;
   min-height:  25rem;
@@ -1230,9 +1230,14 @@ p.free-order-description {
   vertical-align: top;
   align-self: center;
   text-align: center;
-  transition: 0.2s ease;
   font-size: 0;
-  will-change: background-color, border-radius, box-shadow;
+}
+
+.catalog-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 img {
@@ -1250,8 +1255,8 @@ img {
 }
 
 .catalog-item-name { 
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   font-size: 1rem;
   line-height: 1.375em;
@@ -1280,7 +1285,7 @@ img {
 
 .catalog-item-info {
   position: absolute;
-  left: 0;
+  left: 0%;
   bottom: 35%;
 }
 
@@ -1297,13 +1302,6 @@ img {
   font-weight: bold;
   color: #fff;
   text-shadow: 0.05em 0.05em 0.05em #585858;
-}
-
-.catalog-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
-  z-index: 100;
 }
 
 .preview-button {
