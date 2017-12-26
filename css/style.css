@@ -999,6 +999,40 @@ input[name=search]:focus {
   display: block;
 }
 
+.cart-form {
+  display: none;
+  min-width: 48em;
+  max-width: 48em;
+  max-height: 25em;
+  padding: 1.5em;
+  position: absolute;
+  color: #000;
+  border-radius: 0.7em;
+  background-color: #f8f7f4;
+  box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transform: translate(-55%, 20%);
+}
+
+.cart-order-item {
+  padding: 1em 0;
+}
+
+.cart-order-item:nth-child(2) {
+  border-bottom: 1px solid #c7c6c5;
+}
+
+.order-item-img {
+  width: 6%;
+  height: auto;
+}
+
+.cart-block:hover .cart-form {
+  display: block;
+}
+
 .menu-info {
   position: relative;
   top: -0.4rem;
@@ -1514,7 +1548,6 @@ img {
 .map-contact {
   position: absolute;
   max-width: 19.1em;
-  min-height: 19em;
   top: 80.8%;
   left: 64%;
   padding: 1.8em 1.7em;
@@ -1525,7 +1558,7 @@ img {
 }
 
 .map-contact-info {
-  margin: 0 0 2.6em 0;
+  margin: 0 0 1.7em 0;
 }
 
 .contact-text {
