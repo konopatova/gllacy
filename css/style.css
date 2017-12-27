@@ -912,7 +912,7 @@ button.cart  svg {
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
   font-size: 0.8rem;
-  transform: translate(-90%, 50%);
+  transform: translate(-90%, 52%);
 }
 
 .search-block {
@@ -951,7 +951,7 @@ input[name=search]:focus {
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
   font-size: 0.9rem;
-  transform: translate(-55%, 20%);
+  transform: translate(-55%, 23%);
 }
 
 .login-form input[type=email],
