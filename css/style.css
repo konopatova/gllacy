@@ -484,8 +484,7 @@ a:hover {
 h1,
 h2,
 h3,
-p,
- {
+p {
   padding: 0;
   margin: 0;
   color:#fff;
@@ -1819,7 +1818,7 @@ textarea {
   font-weight: bold;
   font-size: 1em;
   background-color: rgba(255,255,255, 0.2);
-  color: #fff;;
+  color: #fff;
 }
 
 .range-controls {
@@ -1983,7 +1982,6 @@ span.filter-title {
   margin-right: 8px;
   border: 3px solid rgba(255,255,255, 0.7);
   border-radius: 50%;
-  background-image: url();
   background-repeat: no-repeat;
 }
 
