@@ -483,8 +483,7 @@ a:hover {
 
 h1,
 h2,
-h3,
-p {
+h3 {
   padding: 0;
   margin: 0;
   color:#fff;
@@ -904,7 +903,7 @@ button.cart  svg {
 .search-form {
   display: none;
   width: 21.500em;
-  padding: 1em 0;
+  padding: 1em;
   position: absolute;
   color: #000;
   border-radius: 0.7em;
@@ -912,7 +911,7 @@ button.cart  svg {
   box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
   z-index: 5;
   font-size: 0.8rem;
-  transform: translate(-90%, 52%);
+  transform: translate(-90%, 60%);
 }
 
 .search-block {
@@ -924,7 +923,7 @@ button.cart  svg {
 }
 
 input[name=search] {
-  width: 90%;
+  width: 100%;
   padding: 9px 14px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
@@ -1640,8 +1639,8 @@ p.free-order-description {
 
 .map-contact {
   position: absolute;
-  max-width: 19.1em;
-  top: 80.8%;
+  max-width: 19em;
+  top: 81.1%;
   left: 64%;
   padding: 1.8em 1.7em;
   background-color: rgba(255,255,255,.98);
@@ -1666,7 +1665,7 @@ p.free-order-description {
 .contact-text span {
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 25px;
   color: #000;
 }
 
@@ -1675,6 +1674,7 @@ p.free-order-description {
 }
 
 .modal-contact {
+  display: none;
   visibility: hidden;
   width: 450px;
   padding: 13px 25px 25px;
