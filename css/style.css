@@ -505,6 +505,7 @@ h2 {
 h3 {
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 img {
@@ -1659,12 +1660,14 @@ p.free-order-description {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
+  color: #000;
 }
 
 .contact-text span {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  color: #000;
 }
 
 .field {
