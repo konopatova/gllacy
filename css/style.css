@@ -1771,6 +1771,8 @@ textarea {
 }
 
 .catalog-item-row {
+  display: flex;
+  flex-wrap: nowrap;
   margin-bottom: -2.3em;
   padding: 0;
 }

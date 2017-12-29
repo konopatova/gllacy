@@ -6,16 +6,16 @@ var closeModal = document.querySelector('.modal-contact-close');
 
 contactForm.addEventListener('submit',function(e){
     e.preventDefault();
-    modalWindow.classlist.toggle('is-active');
+    modalWindow.classList.toggle('is-active');
 });
 
 closeModal.addEventListener('click',function(){
     modalWindow.classList.toggle('is-active');
 });
 
-window.addEventListener('keydown', function(esc) {
+window.addEventListener('keydown', function(esc){
     if (esc.keyCode===27) {
-        modalWindow.classlist.toggle('is-active');
+        modalWindow.classList.toggle('is-active');
     };
 });
 
