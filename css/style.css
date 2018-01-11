@@ -1354,25 +1354,24 @@ p.free-order-description {
 .preview-button {
   content: "";
   position: absolute;
-  padding: 0.5em;
-  max-width: 12.500em;
+  padding: .5em;
+  max-width: 12.5em;
+  min-width: 11em;
   bottom: 0;
-  left: 0;
-  transform: translate(22%, -50%);
+  right: 50%;
+  -webkit-transform: translate(22%,-50%);
+  transform: translate(50%,-50%);
   vertical-align: top;
-  color: #fff;
   border-radius: 10em;
-  background-color: #e74a35; 
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  font-weight: bold; 
+  background-image: -ms-linear-gradient(90deg,#e74a35 0%,#f26843 100%);
+  font-weight: 700;
+  -webkit-box-shadow: 0 0.01em 0.01em 0 #ac1000;
   box-shadow: 0 0.01em 0.01em 0 #ac1000;
-  border-bottom: 2px solid #ac1000;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.125rem;
   z-index: 4;
+  background-color: #e74a35;
 }
 
 .preview-button:hover {
@@ -1771,7 +1770,11 @@ textarea {
 }
 
 .catalog-item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   margin-bottom: -2.3em;
   padding: 0;
